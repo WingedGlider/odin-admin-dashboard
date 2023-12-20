@@ -28,6 +28,7 @@ ul{
     flex-direction: column;
     gap: 20px;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 li{
     display: flex;
@@ -38,6 +39,9 @@ li img{
     height: 25px;
     margin-left: 20px;
     filter: invert(92%) sepia(0%) saturate(7470%) hue-rotate(87deg) brightness(114%) contrast(106%);
+}
+li:nth-child(7){
+    margin-top: 40px;
 }
 input{
     height: 25px;
@@ -62,6 +66,10 @@ h3{
     font-weight: bold;
     margin-bottom: 4px;
 }
+hr{
+    border: solid 1px rgb(180, 193, 207);
+    width: 100%;
+}
 .dashboard{
     display: flex;
     gap: 20px;
@@ -76,6 +84,7 @@ h3{
     align-items: center;
     margin: 20px 15px;
     gap: 7px;
+    font-weight: bold;
 }
 h1>img{
     height: 45px;
@@ -106,7 +115,7 @@ h1>img{
     gap: 30px;
     align-items: center;
     padding: 40px;
-    box-shadow: 1px 4px 4px rgb(207, 207, 207)
+    box-shadow: 1px 4px 4px rgb(180, 193, 207);
 }
 .header div{
     margin-right: auto;
@@ -125,7 +134,7 @@ h1>img{
     grid-area: 3/2/4/3;
     grid-template: 1fr 1fr/ 3fr 1fr;
     gap: 15px;
-    background-color: beige;
+    background-color:rgb(209, 224, 241);
     z-index: -1;
 }
 .content h2{
@@ -134,14 +143,60 @@ h1>img{
 }
 .proj{
     grid-area: 1/1/3/2;
+}
+.proj>div{
     display: grid;
-    
+    width: 100%;
+    height: 97%;
 }
-.announcements{
+.announcements>div{
+    background-color: white;
+    height: 220px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 4px 4px rgb(180, 193, 207);
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
-.trending{
+.announcements p{
+    font-size: .8rem;
+    color: rgb(95, 109, 122);
+}
+.announcements h4{
+    font-size: .9rem;
+    font-weight: bold;
+}
+.trending h4{
+    font-size: .85rem;
+    font-weight: bold;
+}
+.trending>div{
     display: flex;
     flex-direction: column;
+    height: 220px;
+    background-color:  white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 4px 4px rgb(180, 193, 207);
+    padding: 20px;
+    justify-content: space-between;
+    gap: 5px;
+}
+.trending>div>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.trending p{
+    color: rgb(95, 109, 122);
+    font-size: .9rem;
+}
+.trending img{
+    width: 50px;
 }
