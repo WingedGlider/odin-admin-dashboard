@@ -37,13 +37,37 @@ li{
 li img{
     height: 25px;
     margin-left: 20px;
+    filter: invert(92%) sepia(0%) saturate(7470%) hue-rotate(87deg) brightness(114%) contrast(106%);
+}
+input{
+    height: 25px;
+    min-width: 40vw;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(209, 224, 241);
+    margin-right: auto;
+}
+button{
+    color: white;
+    background-color: #0b92d1;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    font-weight: bold;
+    font-size: .9rem;
+}
+h3{
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 4px;
 }
 .dashboard{
     display: flex;
     gap: 20px;
     flex-direction: column;
     grid-area: 1/1/4/2;
-    background-color: #0d9488;
+    background-color: #0b92d1;
     color: white;
     font-size: 1.7rem;
 }
@@ -55,21 +79,58 @@ li img{
 }
 h1>img{
     height: 45px;
+    filter: invert(92%) sepia(0%) saturate(7470%) hue-rotate(87deg) brightness(114%) contrast(106%);
 }
 .search{
     display: flex;
     grid-area: 1/2/2/3;
+    align-items: center;
+    gap: 15px;
+    padding: 35px;
+}
+.search img{
+    width: 50px;
+    border-radius: 50px;
+}
+.search img[src$=".svg"]{
+    width: 23px;
+}
+.search h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 40px;
 }
 .header{
     display: flex;
     grid-area: 2/2/3/3;
+    gap: 30px;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 1px 4px 4px rgb(207, 207, 207)
+}
+.header div{
+    margin-right: auto;
+}
+.header img{
+    width: 70px;
+    border-radius: 50px;
+}
+.header h1{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .content{
-    margin: 20px;
+    padding: 30px 20px 40px 20px;
     display: grid;
     grid-area: 3/2/4/3;
     grid-template: 1fr 1fr/ 3fr 1fr;
     gap: 15px;
+    background-color: beige;
+    z-index: -1;
+}
+.content h2{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .proj{
     grid-area: 1/1/3/2;
