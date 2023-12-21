@@ -186,7 +186,7 @@ h1>img{
 }
 .announcements>div{
     background-color: white;
-    height: 220px;
+    height: 1fr;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 10px;
@@ -213,7 +213,7 @@ h1>img{
 .trending>div{
     display: flex;
     flex-direction: column;
-    height: 220px;
+    height: 1fr;
     background-color:  white;
     border-radius: 15px;
     margin-top: 10px;
